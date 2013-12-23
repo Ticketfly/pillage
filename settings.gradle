@@ -1,1 +1,1 @@
-include 'pillage-core', 'pillage-groovy', 'pillage-scala', 'pillage-new-relic'
+include 'pillage-core', 'pillage-groovy', 'pillage-scala', 'pillage-new-relic', 'pillage-grails-plugin'

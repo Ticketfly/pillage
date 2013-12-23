@@ -1,0 +1,31 @@
+
+buildscript {
+    repositories {
+        mavenCentral()
+        mavenRepo urls: "http://repository.jboss.org/maven2/"
+    }
+
+    dependencies {
+        classpath "org.grails:grails-gradle-plugin:1.0",
+                "org.grails:grails-bootstrap:2.2.3"
+    }
+}
+
+tasks.remove(clean)
+
+apply plugin: "grails"
+
+
+dependsOn(':pillage-core')
+dependsOn(':pillage-groovy')
+
+dependencies {
+    compile 'org.grails:grails:2.2.3'
+    compile "org.grails:grails-web:2.2.3"
+    compile "org.grails:grails-core:2.2.3"
+    compile 'org.grails:grails-plugin-validation:2.2.3'
+    compile "org.slf4j:slf4j-api:1.7.5"
+}
+
+
+

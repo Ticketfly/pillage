@@ -10,3 +10,4 @@ bin/
 gradle.properties
 .*
 *~
+atlassian-ide-plugin.xml
